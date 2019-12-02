@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Welcome
+    - name: Run a multi-line script
+      run: |
+        echo This is the website for our comic team...
+        echo Team Dream
